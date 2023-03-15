@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 2</title>
+</head>
+<body>
+<script>
+    let inpNumber = +prompt('Nhap vao so nguyen duong bat ki:');
+    let factorial=1;
+    if (Number.isInteger(inpNumber) && inpNumber >0){
+        //tinh giai thua cua so nguyen duong
+        for (let i = 1; i <= inpNumber; i++) {
+        factorial *= i;
+        }
+        document.write(`Giai thua cua so ${inpNumber} la: ${factorial}`)
+    }
+    else {
+        alert('Vui long nhap lai')
+    }
+</script>
+</body>
+</html>

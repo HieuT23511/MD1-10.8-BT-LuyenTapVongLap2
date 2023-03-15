@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 3</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let b = 1;
+    document.write(a + '<br>');
+    document.write(b + '<br>');
+    let temp;
+    let N = +prompt("Nhap so luong so trong day fibo can in")
+    for (let i = 0; i < N - 2; i++) {
+        temp = +(a + b);
+        a = +b;
+        b = +temp;
+        document.write(temp + '<br>')
+    }
+</script>
+</body>
+</html>

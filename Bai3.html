@@ -45,20 +45,18 @@
     // }
     let str1 = '*';
     let str2 = '&nbsp;&nbsp;';
-    let h1 =""
-    let h2 =""
-    let h3 =""
-    let h4 =""
+    let triangle1 =""
+    let triangle2 =""
+    let triangle3 =""
+    let triangle4 =""
     for (let i = 1; i <= 6; i++) {
         let space = 6 - i
-        h1 = str1.repeat(space) + str2.repeat(6 - space) + '<br>' + h1;
-        h2 = str1.repeat(6 - space) + str2.repeat(space) + '<br>' + h2;
-        h3 = str2.repeat(6 - space) + str1.repeat(space) + '<br>' + h3;
-        h4 = str2.repeat(space) + str1.repeat(6 - space) + '<br>' + h4;
+        triangle1 += str1.repeat(space) + str2.repeat(6 - space) + '<br>' ;
+        triangle2 += str1.repeat(5 - space) + str2.repeat(space) + '<br>' ;
+        triangle3 += str2.repeat(6 - space) + str1.repeat(space) + '<br>' ;
+        triangle4 += str2.repeat(space) + str1.repeat(5 - space) + '<br>' ;
     }
-    document.getElementById('display').innerHTML = h1 + '<br>'+h2 +h3+ '<br>'+h4
-
-
+    document.getElementById('display').innerHTML = triangle1 +'<br>'+triangle2 + '<br>'+ triangle3+ '<br>'+triangle4
 </script>
 </body>
 </html>

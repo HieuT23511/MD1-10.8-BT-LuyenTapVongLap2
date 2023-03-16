@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 3</title>
+</head>
+<body>
+    <p id="display"></p>
+<script>
+    // for (let i = 1; i <= 5; i++) {
+    //     for (let j = 1; j <= i; j++) {
+    //         document.write('*')
+    //     }
+    //     document.write('<br>')
+    // }
+    //
+    //
+    // for (let i = 5; i >= 1; i--) {
+    //     for (let j = 1; j <= i; j++) {
+    //         document.write('*')
+    //     }
+    //     document.write('<br>')
+    // }
+    //
+    //
+    // for (let i = 1; i <= 5; i++) {
+    //     for (let j = 1; j <= 5 - i; j++) {
+    //         document.write('&nbsp;&nbsp;')
+    //     }
+    //     for (let j = 1; j <= i; j++) {
+    //         document.write('*')
+    //     }
+    //     document.write('<br>')
+    // }
+    //
+    //
+    // for (let i = 5; i >= 1; i--) {
+    //     for (let j = 1; j <= 5 - i; j++) {
+    //         document.write('&nbsp;&nbsp;')
+    //     }
+    //     for (let j = 1; j <= i; j++) {
+    //         document.write('*')
+    //     }
+    //     document.write('<br>')
+    // }
+    let str1 = '*';
+    let str2 = '&nbsp;&nbsp;';
+    let h1 =""
+    let h2 =""
+    let h3 =""
+    let h4 =""
+    for (let i = 1; i <= 6; i++) {
+        let space = 6 - i
+        h1 = str1.repeat(space) + str2.repeat(6 - space) + '<br>' + h1;
+        h2 = str1.repeat(6 - space) + str2.repeat(space) + '<br>' + h2;
+        h3 = str2.repeat(6 - space) + str1.repeat(space) + '<br>' + h3;
+        h4 = str2.repeat(space) + str1.repeat(6 - space) + '<br>' + h4;
+    }
+    document.getElementById('display').innerHTML = h1 + '<br>'+h2 +h3+ '<br>'+h4
+
+
+</script>
+</body>
+</html>
